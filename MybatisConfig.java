@@ -1,3 +1,5 @@
+/* 경로 프로젝트/src/main/java/com.example.demo/config */
+
 @Configuration
 @EnableTransactionManagement
 @MapperScan(basePackages="com.example.demo.mapper")
