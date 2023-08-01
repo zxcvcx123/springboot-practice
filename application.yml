@@ -1,3 +1,5 @@
+/* 경로 프로젝트/src/main/resources */
+
 server:
   port: 8080
   servlet:
