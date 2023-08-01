@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force-response: true
+
+#스프링 및 db 연결       
+spring: 
+  resources:
+    static-locations: classpath:/static/
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/reservation?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul
+    username: root
+    password: admin
+    
+mybatis:
+  mapper-locations: 
+    classpath: /mybatis/**/*.xml
+    
+logging:
+  level:
+    org.mybatis.spring.SqlStatementInterceptor: TRACE
