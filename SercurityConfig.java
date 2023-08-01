@@ -1,3 +1,5 @@
+/* 경로 프로젝트/src/main/java/com.example.demo/config */
+
 //시큐리티 핵심 기능들을 컨트롤 하는 클래스
 @Configuration
 @EnableWebSecurity
